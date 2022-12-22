@@ -1,3 +1,3 @@
-# limocar11ty
+# Car Website 11ty
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/11ty-cd26ag)
+Fast and clean design built with 11ty eleventy static site generator
