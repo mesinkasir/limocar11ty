@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.cover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

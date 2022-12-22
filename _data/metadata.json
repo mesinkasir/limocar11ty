@@ -1,0 +1,34 @@
+{
+  "title": "Grand Limousine",
+  "url": "https://grandlimousine.netlify.app/",
+  "language": "en",
+  "description": "Limousine and car website template with grandlimousine 11ty",
+  "info": "Modern Website Development",
+  "infotext": "Best limousine and car template themes for your transporation bussiness.built blast fast website with 11ty eleventy static site generator include with auto SEO injection.",
+  "solution": "Best Solutions for",
+  "web1": "Limousine website",
+  "web2": "Car services website",
+  "web3": "Party bus website",
+  "web4": "Transporation website",
+  "web5": "Rent car website",
+  "slogan": "Built Your website now",
+  "btn": "Deploy Website →",
+  "link": "https://www.fiverr.com/creativitas/create-your-custom-website-and-app",
+  "cover": "/img/car.svg",
+  "git": "https://github.com/mesinkasir/",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://grandlimousine.netlify.app/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://grandlimousine.netlify.app/feed/feed.json"
+  },
+  "author": {
+    "name": "Creativitas",
+    "email": "axcora@gmail.com",
+    "url": "https://www.fiverr.com/creativitas/"
+  }
+}

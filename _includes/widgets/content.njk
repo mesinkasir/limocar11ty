@@ -1,0 +1,9 @@
+<body>
+<div class="container">
+{% include "widgets/nav.njk" %}
+{% include "widgets/header.njk" %}
+<main>{{ content | safe }}</main>
+{% include "widgets/footer.njk" %}
+</div>
+</body>
+</html>

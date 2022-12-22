@@ -1,0 +1,10 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+{% set maxPosts = collections.posts.length %}
+{% set postslist = collections.posts  %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}

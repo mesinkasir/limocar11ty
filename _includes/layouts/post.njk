@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<div class="row">
+<div class="col-md-4 p-3">
+ {% if cover %}<img class="img-fluid cover" width="100%" height="100%" alt="{{metadata.title}} {{ title }}" loading="lazy" src="{{ cover }}"/>{% endif %}
+</div>
+<div class="col-md-8 p-3">
+<h3><strong><a href="{{page.url}}" title="{{ title }}">{{ title }}</a></strong></h3>
+<h4>{{description}}</h4>
+<p>Tag: <small>
+{%- for tag in tags | filterTagList -%}
+{%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+ <a href="{{ tagUrl | url }}" title="{{ tag }}">{{ tag }}</a> &nbsp;
+{%- endfor %}
+</small></p>
+{{ content | safe }}
+<a href="{{btn}}" class="btn btn-outline-dark">Deploy {{title}} →</a>
+</div>
+<div class="col-md-12 p-3 border-top mt-3">
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<div class="row">
+  {%- if previousPost %}<div class="col-md-6 col-6 text-start">← <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.title }}">{{ previousPost.data.title }}</a></div>{% endif %}
+  {%- if nextPost %}<div class="col-md-6 col-6 text-end"><a href="{{ nextPost.url | url }}" title="{{ nextPost.data.title }}">{{ nextPost.data.title }} →</a></div>{% endif %}
+</div>
+{%- endif %}
+</div>
+</div>
